@@ -39,13 +39,13 @@ public class JavaKeywordExampleTest {
 		ctx = KeywordRunner.getExecutionContext(properties, JavaKeywordExample.class);
 	}
 
-	@Test
+	//@Test
 	public void getTime() throws Exception {
 		OutputMessage result = ctx.run("Current time", "{ \"format\" : \"ddMMyyyy\" }");
 		Assert.assertTrue(result.getPayload().containsKey("time"));
 	}
 
-	@Test
+	//@Test
 	public void Demo_Keyword_Sequence() throws Exception {
 		Map<String, String> properties = new HashMap<>();
 		ExecutionContext ctx = KeywordRunner.getExecutionContext(properties, JavaKeywordExample.class);
