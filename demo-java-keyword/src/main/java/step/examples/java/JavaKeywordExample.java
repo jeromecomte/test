@@ -36,10 +36,10 @@ public class JavaKeywordExample extends AbstractKeyword {
 		output.add("time", format.format(date));
 	}
 	
-	@Keyword(name="Business error")
-	public void businessError() throws Exception {
-		output.setBusinessError("App not available");
-	}
+//	@Keyword(name="Business error")
+//	public void businessError() throws Exception {
+//		output.setBusinessError("App not available");
+//	}
 	
 	@Keyword(name="Set date format")
 	public void setDateFormat() throws Exception {
